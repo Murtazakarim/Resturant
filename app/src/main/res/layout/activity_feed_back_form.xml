@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E1D7D7"
+    android:layout_height="match_parent"
+    tools:context=".FeedBackForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="#E1D7D7"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:background="@drawable/headingb"
+                android:padding="5dp"
+                android:text="@string/Heading"
+                android:textColor="@color/from_text_color"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/etextborder"
+                    android:padding="8dp"
+                    android:hint="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Email"
+                    android:background="@drawable/etextborder"
+                    android:padding="8dp"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="+9233333121324"
+                    android:inputType="phone"
+                    android:background="@drawable/etextborder"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Dine In"
+                    android:buttonTint="#A66666"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Take away"
+                    android:buttonTint="#A66666"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food Quality"
+                        android:textColor="@color/from_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Excellant"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Good"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Average"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Dis satisfied"
+                            android:buttonTint="#A66666"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overall service quality"
+                        android:textColor="@color/from_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Excellant"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Good"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Average"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Dis satisfied"
+                            android:buttonTint="#A66666"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cleanliness"
+                        android:textColor="@color/from_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Excellant"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Good"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Average"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Dis satisfied"
+                            android:buttonTint="#A66666"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Over all experience"
+                        android:textColor="@color/from_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Excellant"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Good"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Average"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Dis satisfied"
+                            android:buttonTint="#A66666"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff behaviour"
+                        android:textColor="@color/from_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Excellant"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Good"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:buttonTint="#A66666"
+                            android:text="Average"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:text="Dis satisfied"
+                            android:buttonTint="#A66666"
+                            android:textColor="@color/from_text_color"
+                            android:textSize="16sp" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Any comments or suggestion"
+                    android:textColor="@color/from_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:gravity="top"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/etextborder"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="22sp"
+            android:background="@drawable/headingb"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/from_text_color"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
